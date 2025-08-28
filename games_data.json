@@ -1,0 +1,354 @@
+[
+  {
+    "name": "Little Alchemy",
+    "url": "https://www.crazygames.com/game/little-alchemy",
+    "source": "crazygames",
+    "category": "puzzle",
+    "iframe_url": "https://www.crazygames.com/embed/little-alchemy",
+    "description": "Play Little Alchemy for free! An exciting puzzle game.",
+    "emoji": "🧩"
+  },
+  {
+    "name": "Little Alchemy 2",
+    "url": "https://www.crazygames.com/game/little-alchemy-2",
+    "source": "crazygames",
+    "category": "puzzle",
+    "iframe_url": "https://www.crazygames.com/embed/little-alchemy-2",
+    "description": "Play Little Alchemy 2 for free! An exciting puzzle game.",
+    "emoji": "🧩"
+  },
+  {
+    "name": "Marble Run",
+    "url": "https://www.crazygames.com/game/marble-run",
+    "source": "crazygames",
+    "category": "puzzle",
+    "iframe_url": "https://www.crazygames.com/embed/marble-run",
+    "description": "Play Marble Run for free! An exciting puzzle game.",
+    "emoji": "🧩",
+    "cover_image": "images/covers/marble-run.png"
+  },
+  {
+    "name": "Fireboy and Watergirl 6",
+    "url": "https://www.crazygames.com/game/fireboy-and-watergirl-6-fairy-tales",
+    "source": "crazygames",
+    "category": "arcade",
+    "iframe_url": "https://www.crazygames.com/embed/fireboy-and-watergirl-6-fairy-tales",
+    "description": "Play Fireboy and Watergirl 6 for free! An exciting arcade game.",
+    "emoji": "🕹️",
+    "cover_image": "images/covers/fireboy-and-watergirl-6.png"
+  },
+  {
+    "name": "Getting Over It",
+    "url": "https://www.crazygames.com/game/getting-over-it",
+    "source": "crazygames",
+    "category": "arcade",
+    "iframe_url": "https://www.crazygames.com/embed/getting-over-it",
+    "description": "Play Getting Over It for free! An exciting arcade game.",
+    "emoji": "🕹️"
+  },
+  {
+    "name": "Helix Jump",
+    "url": "https://www.crazygames.com/game/helix-jump",
+    "source": "crazygames",
+    "category": "arcade",
+    "iframe_url": "https://www.crazygames.com/embed/helix-jump",
+    "description": "Play Helix Jump for free! An exciting arcade game.",
+    "emoji": "🕹️",
+    "cover_image": "images/covers/helix-jump.png"
+  },
+  {
+    "name": "Getaway Shootout",
+    "url": "https://www.crazygames.com/game/getaway-shootout",
+    "source": "crazygames",
+    "category": "action",
+    "iframe_url": "https://www.crazygames.com/embed/getaway-shootout",
+    "description": "Play Getaway Shootout for free! An exciting action game.",
+    "emoji": "⚔️",
+    "cover_image": "images/covers/getaway-shootout.png"
+  },
+  {
+    "name": "Rooftop Snipers",
+    "url": "https://www.crazygames.com/game/rooftop-snipers",
+    "source": "crazygames",
+    "category": "action",
+    "iframe_url": "https://www.crazygames.com/embed/rooftop-snipers",
+    "description": "Play Rooftop Snipers for free! An exciting action game.",
+    "emoji": "⚔️",
+    "cover_image": "images/covers/rooftop-snipers.png"
+  },
+  {
+    "name": "Far Orion: New Worlds",
+    "url": "https://www.crazygames.com/game/far-orion-new-worlds",
+    "source": "crazygames",
+    "category": "action",
+    "iframe_url": "https://www.crazygames.com/embed/far-orion-new-worlds",
+    "description": "Play Far Orion: New Worlds for free! An exciting action game.",
+    "emoji": "⚔️",
+    "cover_image": "images/covers/far-orion-new-worlds.png"
+  },
+  {
+    "name": "Geometry Dash",
+    "url": "https://www.crazygames.com/game/geometry-dash-online",
+    "source": "crazygames",
+    "category": "casual",
+    "iframe_url": "https://www.crazygames.com/embed/geometry-dash-online",
+    "description": "Play Geometry Dash for free! An exciting casual game.",
+    "emoji": "🎮"
+  },
+  {
+    "name": "Drift Boss",
+    "url": "https://www.crazygames.com/game/drift-boss",
+    "source": "crazygames",
+    "category": "casual",
+    "iframe_url": "https://www.crazygames.com/embed/drift-boss",
+    "description": "Play Drift Boss for free! An exciting casual game.",
+    "emoji": "🎮",
+    "cover_image": "images/covers/drift-boss.png"
+  },
+  {
+    "name": "Bubble Shooter",
+    "url": "https://www.crazygames.com/game/bubble-shooter-classic",
+    "source": "crazygames",
+    "category": "casual",
+    "iframe_url": "https://www.crazygames.com/embed/bubble-shooter-classic",
+    "description": "Play Bubble Shooter for free! An exciting casual game.",
+    "emoji": "🎮",
+    "cover_image": "images/covers/bubble-shooter.png"
+  },
+  {
+    "name": "Agar.io.",
+    "url": "https://www.crazygames.com/game/agario",
+    "source": "crazygames",
+    "category": "io",
+    "iframe_url": "https://www.crazygames.com/embed/agario",
+    "description": "Play Agar.io. for free! An exciting io game.",
+    "emoji": "🌐"
+  },
+  {
+    "name": "Holey.io",
+    "url": "https://www.crazygames.com/game/holey-io-battle-royale",
+    "source": "crazygames",
+    "category": "io",
+    "iframe_url": "https://www.crazygames.com/embed/holey-io-battle-royale",
+    "description": "Play Holey.io for free! An exciting io game.",
+    "emoji": "🌐",
+    "cover_image": "images/covers/holeyio.png"
+  },
+  {
+    "name": "Snake.io",
+    "url": "https://www.crazygames.com/game/snake-io",
+    "source": "crazygames",
+    "category": "io",
+    "iframe_url": "https://www.crazygames.com/embed/snake-io",
+    "description": "Play Snake.io for free! An exciting io game.",
+    "emoji": "🌐",
+    "cover_image": "images/covers/snakeio.png"
+  },
+  {
+    "name": "Tetris",
+    "url": "https://tetris.com/play-tetris",
+    "source": "tetris",
+    "category": "puzzle",
+    "iframe_url": "https://tetris.com/play-tetris",
+    "description": "The legendary puzzle game! Arrange falling blocks to create complete lines.",
+    "emoji": "🧩"
+  },
+  {
+    "name": "Cookie Clicker",
+    "url": "https://orteil.dashnet.org/cookieclicker/",
+    "source": "dashnet",
+    "category": "idle",
+    "iframe_url": "https://www.crazygames.com/embed/cookie-clicker",
+    "description": "Click cookies to earn points and buy upgrades! Addictive idle game.",
+    "emoji": "🍪"
+  },
+  {
+    "name": "Pac-Man",
+    "url": "https://www.google.com/doodles/30th-anniversary-of-pac-man",
+    "source": "google",
+    "category": "arcade",
+    "iframe_url": "https://html5games.com/Game/Pac-Man/embed",
+    "description": "Navigate mazes, eat dots, and avoid ghosts in this classic arcade game.",
+    "emoji": "👻"
+  },
+  {
+    "name": "Flappy Bird",
+    "emoji": "🐦",
+    "category": "arcade",
+    "source": "crazygames",
+    "iframe_url": "https://www.crazygames.com/embed/flappy-bird",
+    "url": "https://www.crazygames.com/game/flappy-bird",
+    "description": "Navigate through pipes in this challenging arcade game! Tap to flap and avoid obstacles."
+  },
+  {
+    "name": "Slope",
+    "emoji": "⛷️",
+    "category": "arcade",
+    "source": "crazygames",
+    "iframe_url": "https://www.crazygames.com/embed/slope",
+    "url": "https://www.crazygames.com/game/slope",
+    "description": "Control a ball rolling down a slope! Avoid obstacles and see how far you can go."
+  },
+  {
+    "name": "Run 3",
+    "emoji": "🏃",
+    "category": "arcade",
+    "source": "crazygames",
+    "iframe_url": "https://www.crazygames.com/embed/run-3",
+    "url": "https://www.crazygames.com/game/run-3",
+    "description": "Run and jump through space tunnels! Navigate gravity-defying levels."
+  },
+  {
+    "name": "Subway Surfers",
+    "emoji": "🚇",
+    "category": "arcade",
+    "source": "crazygames",
+    "iframe_url": "https://www.crazygames.com/embed/subway-surfers",
+    "url": "https://www.crazygames.com/game/subway-surfers",
+    "description": "Run through subway tracks! Dodge trains and collect coins in this endless runner."
+  },
+  {
+    "name": "Temple Run 2",
+    "emoji": "🏛️",
+    "category": "arcade",
+    "source": "crazygames",
+    "iframe_url": "https://www.crazygames.com/embed/temple-run-2",
+    "url": "https://www.crazygames.com/game/temple-run-2",
+    "description": "Escape from the temple! Run, jump, and slide through dangerous paths."
+  },
+  {
+    "name": "Among Us",
+    "emoji": "👨‍🚀",
+    "category": "action",
+    "source": "crazygames",
+    "iframe_url": "https://www.crazygames.com/embed/among-us",
+    "url": "https://www.crazygames.com/game/among-us",
+    "description": "Find the impostor among the crew! Complete tasks and vote out suspicious players."
+  },
+  {
+    "name": "Fall Guys",
+    "emoji": "🏃‍♂️",
+    "category": "action",
+    "source": "crazygames",
+    "iframe_url": "https://www.crazygames.com/embed/fall-guys",
+    "url": "https://www.crazygames.com/game/fall-guys",
+    "description": "Battle royale party game! Race through obstacle courses with colorful characters."
+  },
+  {
+    "name": "Wordle",
+    "emoji": "📝",
+    "category": "puzzle",
+    "source": "crazygames",
+    "iframe_url": "https://www.crazygames.com/embed/wordle",
+    "url": "https://www.crazygames.com/game/wordle",
+    "description": "Guess the 5-letter word! Use clues to solve the daily word puzzle."
+  },
+  {
+    "name": "2048",
+    "emoji": "🔢",
+    "category": "puzzle",
+    "source": "crazygames",
+    "iframe_url": "https://www.crazygames.com/embed/2048",
+    "url": "https://www.crazygames.com/game/2048",
+    "description": "Combine tiles to reach 2048! Slide and merge numbers in this addictive puzzle."
+  },
+  {
+    "name": "Candy Crush",
+    "emoji": "🍭",
+    "category": "puzzle",
+    "source": "crazygames",
+    "iframe_url": "https://www.crazygames.com/embed/candy-crush",
+    "url": "https://www.crazygames.com/game/candy-crush",
+    "description": "Match colorful candies! Create special combinations and clear the board."
+  },
+  {
+    "name": "Bejeweled",
+    "emoji": "💎",
+    "category": "puzzle",
+    "source": "crazygames",
+    "iframe_url": "https://www.crazygames.com/embed/bejeweled",
+    "url": "https://www.crazygames.com/game/bejeweled",
+    "description": "Match sparkling gems! Create chains of 3 or more jewels to score points."
+  },
+  {
+    "name": "Slither.io",
+    "emoji": "🐍",
+    "category": "io",
+    "source": "crazygames",
+    "iframe_url": "https://www.crazygames.com/embed/slither-io",
+    "url": "https://www.crazygames.com/game/slither-io",
+    "description": "Grow your snake by eating pellets! Avoid other snakes in this multiplayer game."
+  },
+  {
+    "name": "Diep.io",
+    "emoji": "🔫",
+    "category": "io",
+    "source": "crazygames",
+    "iframe_url": "https://www.crazygames.com/embed/diep-io",
+    "url": "https://www.crazygames.com/game/diep-io",
+    "description": "Control a tank and shoot enemies! Upgrade your tank and dominate the battlefield."
+  },
+  {
+    "name": "Paper.io",
+    "emoji": "📄",
+    "category": "io",
+    "source": "crazygames",
+    "iframe_url": "https://www.crazygames.com/embed/paper-io",
+    "url": "https://www.crazygames.com/game/paper-io",
+    "description": "Capture territory by drawing lines! Expand your area while avoiding other players."
+  },
+  {
+    "name": "Idle Miner Tycoon",
+    "emoji": "⛏️",
+    "category": "idle",
+    "source": "crazygames",
+    "iframe_url": "https://www.crazygames.com/embed/idle-miner-tycoon",
+    "url": "https://www.crazygames.com/game/idle-miner-tycoon",
+    "description": "Build a mining empire! Hire managers and automate your mines for maximum profit."
+  },
+  {
+    "name": "AdVenture Capitalist",
+    "emoji": "💰",
+    "category": "idle",
+    "source": "crazygames",
+    "iframe_url": "https://www.crazygames.com/embed/adventure-capitalist",
+    "url": "https://www.crazygames.com/game/adventure-capitalist",
+    "description": "Start with a lemonade stand and build a business empire! Invest and earn money."
+  },
+  {
+    "name": "Clicker Heroes",
+    "emoji": "⚔️",
+    "category": "idle",
+    "source": "crazygames",
+    "iframe_url": "https://www.crazygames.com/embed/clicker-heroes",
+    "url": "https://www.crazygames.com/game/clicker-heroes",
+    "description": "Click to defeat monsters! Hire heroes and upgrade them to fight automatically."
+  },
+  {
+    "name": "Minecraft Classic",
+    "emoji": "🧱",
+    "category": "casual",
+    "source": "minecraft",
+    "iframe_url": "https://classic.minecraft.net/",
+    "url": "https://classic.minecraft.net/",
+    "description": "Build and explore in the classic version of Minecraft! Create your own world with blocks."
+  },
+  {
+    "name": "Happy Wheels",
+    "emoji": "🚲",
+    "category": "casual",
+    "source": "crazygames",
+    "iframe_url": "https://www.crazygames.com/embed/happy-wheels",
+    "url": "https://www.crazygames.com/game/happy-wheels",
+    "description": "Navigate obstacle courses with various vehicles! Physics-based fun with ragdoll characters."
+  },
+  {
+    "name": "Cut the Rope",
+    "emoji": "🍭",
+    "category": "casual",
+    "source": "crazygames",
+    "iframe_url": "https://www.crazygames.com/embed/cut-the-rope",
+    "url": "https://www.crazygames.com/game/cut-the-rope",
+    "description": "Feed candy to Om Nom! Cut ropes and collect stars in this physics puzzle game."
+  }
+]
