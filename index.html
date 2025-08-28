@@ -1,3 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free Online Games - Play Idle, Puzzle & Arcade Games | GameHub</title>
+    <meta name="description" content="Play free online games! Enjoy idle games, puzzle games, and arcade classics. No download required. Play 30+ games including Idle Breakout, 2048, Snake, Tetris and more!">
+    <meta name="keywords" content="free online games, idle games, puzzle games, arcade games, idle breakout, 2048, snake, tetris, browser games">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Free Online Games - Play Now">
+    <meta property="og:description" content="Play free online games! Idle games, puzzle games, and arcade classics. No download required!">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://gamehub.wtf">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎮</text></svg>">
+    
+    <!-- CSS -->
+    <style>
+/* 游戏聚合站全局样式 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    min-height: 100vh;
+}
+
+/* 头部导航 */
+.header {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #4ecdc4;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #4ecdc4;
+}
+
+/* 主要内容区域 */
+.main-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+/* Hero区域 */
+.hero {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    background: linear-gradient(45deg, #4ecdc4, #44a08d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* 首页游戏网格 */
+.games-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.game-card {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 1.5rem;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.game-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.game-thumbnail {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.game-emoji {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.game-title {
+    color: #4ecdc4;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+.game-description {
+    opacity: 0.9;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+}
+
+.game-meta {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    font-size: 0.8rem;
+}
+
+.game-category {
+    background: rgba(78, 205, 196, 0.3);
+    padding: 0.3rem 0.8rem;
+    border-radius: 15px;
+    color: #4ecdc4;
+}
+
+.game-source {
+    opacity: 0.7;
+}
+
+.play-button {
+    display: block;
+    background: linear-gradient(45deg, #ff6b6b, #ee5a52);
+    color: white;
+    text-decoration: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 25px;
+    text-align: center;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.play-button:hover {
+    background: linear-gradient(45deg, #ff5252, #e53935);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(255, 107, 107, 0.4);
+}
+
+/* 分类区域 */
+.categories {
+    margin-top: 4rem;
+    text-align: center;
+}
+
+.categories h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #4ecdc4;
+}
+
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.category-card {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 2rem;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.category-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.category-card h3 {
+    color: #4ecdc4;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.category-card p {
+    opacity: 0.9;
+    line-height: 1.6;
+}
+
+/* 搜索框 */
+.search-box {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 25px;
+    padding: 0.8rem 1.5rem;
+    color: white;
+    width: 300px;
+}
+
+.search-box::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* 页脚 */
+.footer {
+    background: rgba(0, 0, 0, 0.3);
+    text-align: center;
+    padding: 2rem;
+    margin-top: 4rem;
+}
+
+.footer p {
+    opacity: 0.8;
+}
+
+.footer a {
+    color: #4ecdc4;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .nav {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .nav-links {
+        gap: 1rem;
+    }
+    
+    .main-content {
+        padding: 1rem;
+    }
+    
+    .games-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .hero h1 {
+        font-size: 2rem;
+    }
+    
+    .search-box {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="logo">🎮 GameHub</div>
+            <ul class="nav-links">
+                <li><a href="/">Home</a></li>
+                <li><a href="categories/idle-games.html">Idle Games</a></li>
+                <li><a href="categories/puzzle-games.html">Puzzle Games</a></li>
+                <li><a href="categories/arcade-games.html">Arcade Games</a></li>
+            </ul>
+            <input type="text" class="search-box" placeholder="Search games...">
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <section class="hero">
+            <h1>🎮 Free Online Games</h1>
+            <p>Play the best free online games! No download required. Choose from 30+ idle games, puzzle games, and arcade classics.</p>
+        </section>
+
+        <section class="games-grid">
             <!-- Little Alchemy -->
             <div class="game-card" data-category="puzzle" data-name="little alchemy">
                 <div class="game-thumbnail">
@@ -11,6 +327,42 @@
                         <span class="game-source">Crazygames</span>
                     </div>
                     <a href="https://www.crazygames.com/embed/little-alchemy" class="play-button" target="_blank">
+                        <span>🎮 Play Now</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Little Alchemy 2 -->
+            <div class="game-card" data-category="puzzle" data-name="little alchemy 2">
+                <div class="game-thumbnail">
+                    <div class="game-emoji">🧪</div>
+                </div>
+                <div class="game-info">
+                    <h3 class="game-title">Little Alchemy 2</h3>
+                    <p class="game-description">The sequel to Little Alchemy! Discover new combinations and create amazing elements.</p>
+                    <div class="game-meta">
+                        <span class="game-category">Puzzle</span>
+                        <span class="game-source">Crazygames</span>
+                    </div>
+                    <a href="https://www.crazygames.com/embed/little-alchemy-2" class="play-button" target="_blank">
+                        <span>🎮 Play Now</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Marble Run -->
+            <div class="game-card" data-category="puzzle" data-name="marble run">
+                <div class="game-thumbnail">
+                    <div class="game-emoji">🔮</div>
+                </div>
+                <div class="game-info">
+                    <h3 class="game-title">Marble Run</h3>
+                    <p class="game-description">Build marble tracks and watch them roll! Physics-based puzzle game.</p>
+                    <div class="game-meta">
+                        <span class="game-category">Puzzle</span>
+                        <span class="game-source">Crazygames</span>
+                    </div>
+                    <a href="https://www.crazygames.com/embed/marble-run" class="play-button" target="_blank">
                         <span>🎮 Play Now</span>
                     </a>
                 </div>
@@ -34,19 +386,19 @@
                 </div>
             </div>
 
-            <!-- Cookie Clicker -->
-            <div class="game-card" data-category="idle" data-name="cookie clicker">
+            <!-- Wordle -->
+            <div class="game-card" data-category="puzzle" data-name="wordle">
                 <div class="game-thumbnail">
-                    <div class="game-emoji">🍪</div>
+                    <div class="game-emoji">📝</div>
                 </div>
                 <div class="game-info">
-                    <h3 class="game-title">Cookie Clicker</h3>
-                    <p class="game-description">Click cookies to earn points and buy upgrades! Addictive idle game.</p>
+                    <h3 class="game-title">Wordle</h3>
+                    <p class="game-description">Guess the 5-letter word! Use clues to solve the daily word puzzle.</p>
                     <div class="game-meta">
-                        <span class="game-category">Idle</span>
-                        <span class="game-source">Dashnet</span>
+                        <span class="game-category">Puzzle</span>
+                        <span class="game-source">Crazygames</span>
                     </div>
-                    <a href="https://www.crazygames.com/embed/cookie-clicker" class="play-button" target="_blank">
+                    <a href="https://www.crazygames.com/embed/wordle" class="play-button" target="_blank">
                         <span>🎮 Play Now</span>
                     </a>
                 </div>
@@ -65,6 +417,96 @@
                         <span class="game-source">Crazygames</span>
                     </div>
                     <a href="https://www.crazygames.com/embed/2048" class="play-button" target="_blank">
+                        <span>🎮 Play Now</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Candy Crush -->
+            <div class="game-card" data-category="puzzle" data-name="candy crush">
+                <div class="game-thumbnail">
+                    <div class="game-emoji">🍭</div>
+                </div>
+                <div class="game-info">
+                    <h3 class="game-title">Candy Crush</h3>
+                    <p class="game-description">Match colorful candies! Create special combinations and clear the board.</p>
+                    <div class="game-meta">
+                        <span class="game-category">Puzzle</span>
+                        <span class="game-source">Crazygames</span>
+                    </div>
+                    <a href="https://www.crazygames.com/embed/candy-crush" class="play-button" target="_blank">
+                        <span>🎮 Play Now</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Bejeweled -->
+            <div class="game-card" data-category="puzzle" data-name="bejeweled">
+                <div class="game-thumbnail">
+                    <div class="game-emoji">💎</div>
+                </div>
+                <div class="game-info">
+                    <h3 class="game-title">Bejeweled</h3>
+                    <p class="game-description">Match gems to score points! Classic match-3 puzzle game.</p>
+                    <div class="game-meta">
+                        <span class="game-category">Puzzle</span>
+                        <span class="game-source">Crazygames</span>
+                    </div>
+                    <a href="https://www.crazygames.com/embed/bejeweled" class="play-button" target="_blank">
+                        <span>🎮 Play Now</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Fireboy and Watergirl 6 -->
+            <div class="game-card" data-category="arcade" data-name="fireboy and watergirl 6">
+                <div class="game-thumbnail">
+                    <div class="game-emoji">🔥</div>
+                </div>
+                <div class="game-info">
+                    <h3 class="game-title">Fireboy and Watergirl 6</h3>
+                    <p class="game-description">Control both characters to solve puzzles! Teamwork adventure game.</p>
+                    <div class="game-meta">
+                        <span class="game-category">Arcade</span>
+                        <span class="game-source">Crazygames</span>
+                    </div>
+                    <a href="https://www.crazygames.com/embed/fireboy-and-watergirl-6" class="play-button" target="_blank">
+                        <span>🎮 Play Now</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Getting Over It -->
+            <div class="game-card" data-category="arcade" data-name="getting over it">
+                <div class="game-thumbnail">
+                    <div class="game-emoji">🏔️</div>
+                </div>
+                <div class="game-info">
+                    <h3 class="game-title">Getting Over It</h3>
+                    <p class="game-description">Climb the mountain with a hammer! Challenging physics-based game.</p>
+                    <div class="game-meta">
+                        <span class="game-category">Arcade</span>
+                        <span class="game-source">Crazygames</span>
+                    </div>
+                    <a href="https://www.crazygames.com/embed/getting-over-it" class="play-button" target="_blank">
+                        <span>🎮 Play Now</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Helix Jump -->
+            <div class="game-card" data-category="arcade" data-name="helix jump">
+                <div class="game-thumbnail">
+                    <div class="game-emoji">🌀</div>
+                </div>
+                <div class="game-info">
+                    <h3 class="game-title">Helix Jump</h3>
+                    <p class="game-description">Bounce the ball down the helix tower! Avoid colored obstacles.</p>
+                    <div class="game-meta">
+                        <span class="game-category">Arcade</span>
+                        <span class="game-source">Crazygames</span>
+                    </div>
+                    <a href="https://www.crazygames.com/embed/helix-jump" class="play-button" target="_blank">
                         <span>🎮 Play Now</span>
                     </a>
                 </div>
@@ -160,37 +602,163 @@
                 </div>
             </div>
 
-            <!-- Wordle -->
-            <div class="game-card" data-category="puzzle" data-name="wordle">
+            <!-- Temple Run 2 -->
+            <div class="game-card" data-category="arcade" data-name="temple run 2">
                 <div class="game-thumbnail">
-                    <div class="game-emoji">📝</div>
+                    <div class="game-emoji">🏛️</div>
                 </div>
                 <div class="game-info">
-                    <h3 class="game-title">Wordle</h3>
-                    <p class="game-description">Guess the 5-letter word! Use clues to solve the daily word puzzle.</p>
+                    <h3 class="game-title">Temple Run 2</h3>
+                    <p class="game-description">Endless running adventure! Escape from the temple and collect treasures.</p>
                     <div class="game-meta">
-                        <span class="game-category">Puzzle</span>
+                        <span class="game-category">Arcade</span>
                         <span class="game-source">Crazygames</span>
                     </div>
-                    <a href="https://www.crazygames.com/embed/wordle" class="play-button" target="_blank">
+                    <a href="https://www.crazygames.com/embed/temple-run-2" class="play-button" target="_blank">
                         <span>🎮 Play Now</span>
                     </a>
                 </div>
             </div>
 
-            <!-- Candy Crush -->
-            <div class="game-card" data-category="puzzle" data-name="candy crush">
+            <!-- Getaway Shootout -->
+            <div class="game-card" data-category="action" data-name="getaway shootout">
                 <div class="game-thumbnail">
-                    <div class="game-emoji">🍭</div>
+                    <div class="game-emoji">🔫</div>
                 </div>
                 <div class="game-info">
-                    <h3 class="game-title">Candy Crush</h3>
-                    <p class="game-description">Match colorful candies! Create special combinations and clear the board.</p>
+                    <h3 class="game-title">Getaway Shootout</h3>
+                    <p class="game-description">Chaotic multiplayer action! Race to the getaway vehicle while fighting opponents.</p>
                     <div class="game-meta">
-                        <span class="game-category">Puzzle</span>
+                        <span class="game-category">Action</span>
                         <span class="game-source">Crazygames</span>
                     </div>
-                    <a href="https://www.crazygames.com/embed/candy-crush" class="play-button" target="_blank">
+                    <a href="https://www.crazygames.com/embed/getaway-shootout" class="play-button" target="_blank">
+                        <span>🎮 Play Now</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Rooftop Snipers -->
+            <div class="game-card" data-category="action" data-name="rooftop snipers">
+                <div class="game-thumbnail">
+                    <div class="game-emoji">🎯</div>
+                </div>
+                <div class="game-info">
+                    <h3 class="game-title">Rooftop Snipers</h3>
+                    <p class="game-description">Sniper duels on rooftops! Knock your opponent off the building to win.</p>
+                    <div class="game-meta">
+                        <span class="game-category">Action</span>
+                        <span class="game-source">Crazygames</span>
+                    </div>
+                    <a href="https://www.crazygames.com/embed/rooftop-snipers" class="play-button" target="_blank">
+                        <span>🎮 Play Now</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Far Orion: New Worlds -->
+            <div class="game-card" data-category="action" data-name="far orion new worlds">
+                <div class="game-thumbnail">
+                    <div class="game-emoji">🚀</div>
+                </div>
+                <div class="game-info">
+                    <h3 class="game-title">Far Orion: New Worlds</h3>
+                    <p class="game-description">Space exploration adventure! Build your fleet and conquer new worlds.</p>
+                    <div class="game-meta">
+                        <span class="game-category">Action</span>
+                        <span class="game-source">Crazygames</span>
+                    </div>
+                    <a href="https://www.crazygames.com/embed/far-orion-new-worlds" class="play-button" target="_blank">
+                        <span>🎮 Play Now</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Among Us -->
+            <div class="game-card" data-category="action" data-name="among us">
+                <div class="game-thumbnail">
+                    <div class="game-emoji">👨‍🚀</div>
+                </div>
+                <div class="game-info">
+                    <h3 class="game-title">Among Us</h3>
+                    <p class="game-description">Find the impostor among the crew! Complete tasks and vote out suspicious players.</p>
+                    <div class="game-meta">
+                        <span class="game-category">Action</span>
+                        <span class="game-source">Crazygames</span>
+                    </div>
+                    <a href="https://www.crazygames.com/embed/among-us" class="play-button" target="_blank">
+                        <span>🎮 Play Now</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Fall Guys -->
+            <div class="game-card" data-category="action" data-name="fall guys">
+                <div class="game-thumbnail">
+                    <div class="game-emoji">🏃‍♂️</div>
+                </div>
+                <div class="game-info">
+                    <h3 class="game-title">Fall Guys</h3>
+                    <p class="game-description">Multiplayer party game! Race through obstacle courses and be the last one standing.</p>
+                    <div class="game-meta">
+                        <span class="game-category">Action</span>
+                        <span class="game-source">Crazygames</span>
+                    </div>
+                    <a href="https://www.crazygames.com/embed/fall-guys" class="play-button" target="_blank">
+                        <span>🎮 Play Now</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Agar.io -->
+            <div class="game-card" data-category="io" data-name="agar.io">
+                <div class="game-thumbnail">
+                    <div class="game-emoji">🦠</div>
+                </div>
+                <div class="game-info">
+                    <h3 class="game-title">Agar.io</h3>
+                    <p class="game-description">Grow your cell by eating others! Multiplayer survival game.</p>
+                    <div class="game-meta">
+                        <span class="game-category">IO</span>
+                        <span class="game-source">Crazygames</span>
+                    </div>
+                    <a href="https://www.crazygames.com/embed/agar-io" class="play-button" target="_blank">
+                        <span>🎮 Play Now</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Holey.io -->
+            <div class="game-card" data-category="io" data-name="holey.io">
+                <div class="game-thumbnail">
+                    <div class="game-emoji">🕳️</div>
+                </div>
+                <div class="game-info">
+                    <h3 class="game-title">Holey.io</h3>
+                    <p class="game-description">Control a black hole and swallow everything! Grow bigger than other players.</p>
+                    <div class="game-meta">
+                        <span class="game-category">IO</span>
+                        <span class="game-source">Crazygames</span>
+                    </div>
+                    <a href="https://www.crazygames.com/embed/holey-io" class="play-button" target="_blank">
+                        <span>🎮 Play Now</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Snake.io -->
+            <div class="game-card" data-category="io" data-name="snake.io">
+                <div class="game-thumbnail">
+                    <div class="game-emoji">🐍</div>
+                </div>
+                <div class="game-info">
+                    <h3 class="game-title">Snake.io</h3>
+                    <p class="game-description">Classic snake game with multiplayer! Eat food and avoid other snakes.</p>
+                    <div class="game-meta">
+                        <span class="game-category">IO</span>
+                        <span class="game-source">Crazygames</span>
+                    </div>
+                    <a href="https://www.crazygames.com/embed/snake-io" class="play-button" target="_blank">
                         <span>🎮 Play Now</span>
                     </a>
                 </div>
@@ -209,6 +777,222 @@
                         <span class="game-source">Crazygames</span>
                     </div>
                     <a href="https://www.crazygames.com/embed/slither-io" class="play-button" target="_blank">
+                        <span>🎮 Play Now</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Diep.io -->
+            <div class="game-card" data-category="io" data-name="diep.io">
+                <div class="game-thumbnail">
+                    <div class="game-emoji">🔴</div>
+                </div>
+                <div class="game-info">
+                    <h3 class="game-title">Diep.io</h3>
+                    <p class="game-description">Tank battle arena! Upgrade your tank and dominate the battlefield.</p>
+                    <div class="game-meta">
+                        <span class="game-category">IO</span>
+                        <span class="game-source">Crazygames</span>
+                    </div>
+                    <a href="https://www.crazygames.com/embed/diep-io" class="play-button" target="_blank">
+                        <span>🎮 Play Now</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Paper.io -->
+            <div class="game-card" data-category="io" data-name="paper.io">
+                <div class="game-thumbnail">
+                    <div class="game-emoji">📄</div>
+                </div>
+                <div class="game-info">
+                    <h3 class="game-title">Paper.io</h3>
+                    <p class="game-description">Conquer territory by drawing lines! Expand your area while avoiding other players.</p>
+                    <div class="game-meta">
+                        <span class="game-category">IO</span>
+                        <span class="game-source">Crazygames</span>
+                    </div>
+                    <a href="https://www.crazygames.com/embed/paper-io" class="play-button" target="_blank">
+                        <span>🎮 Play Now</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Cookie Clicker -->
+            <div class="game-card" data-category="idle" data-name="cookie clicker">
+                <div class="game-thumbnail">
+                    <div class="game-emoji">🍪</div>
+                </div>
+                <div class="game-info">
+                    <h3 class="game-title">Cookie Clicker</h3>
+                    <p class="game-description">Click cookies to earn points and buy upgrades! Addictive idle game.</p>
+                    <div class="game-meta">
+                        <span class="game-category">Idle</span>
+                        <span class="game-source">Dashnet</span>
+                    </div>
+                    <a href="https://www.crazygames.com/embed/cookie-clicker" class="play-button" target="_blank">
+                        <span>🎮 Play Now</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Idle Miner Tycoon -->
+            <div class="game-card" data-category="idle" data-name="idle miner tycoon">
+                <div class="game-thumbnail">
+                    <div class="game-emoji">⛏️</div>
+                </div>
+                <div class="game-info">
+                    <h3 class="game-title">Idle Miner Tycoon</h3>
+                    <p class="game-description">Build your mining empire! Automate operations and become a tycoon.</p>
+                    <div class="game-meta">
+                        <span class="game-category">Idle</span>
+                        <span class="game-source">Crazygames</span>
+                    </div>
+                    <a href="https://www.crazygames.com/embed/idle-miner-tycoon" class="play-button" target="_blank">
+                        <span>🎮 Play Now</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- AdVenture Capitalist -->
+            <div class="game-card" data-category="idle" data-name="adventure capitalist">
+                <div class="game-thumbnail">
+                    <div class="game-emoji">💰</div>
+                </div>
+                <div class="game-info">
+                    <h3 class="game-title">AdVenture Capitalist</h3>
+                    <p class="game-description">Start businesses and make money! Classic idle capitalism simulator.</p>
+                    <div class="game-meta">
+                        <span class="game-category">Idle</span>
+                        <span class="game-source">Crazygames</span>
+                    </div>
+                    <a href="https://www.crazygames.com/embed/adventure-capitalist" class="play-button" target="_blank">
+                        <span>🎮 Play Now</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Clicker Heroes -->
+            <div class="game-card" data-category="idle" data-name="clicker heroes">
+                <div class="game-thumbnail">
+                    <div class="game-emoji">⚔️</div>
+                </div>
+                <div class="game-info">
+                    <h3 class="game-title">Clicker Heroes</h3>
+                    <p class="game-description">Click to defeat monsters and hire heroes! Epic idle RPG adventure.</p>
+                    <div class="game-meta">
+                        <span class="game-category">Idle</span>
+                        <span class="game-source">Crazygames</span>
+                    </div>
+                    <a href="https://www.crazygames.com/embed/clicker-heroes" class="play-button" target="_blank">
+                        <span>🎮 Play Now</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Geometry Dash -->
+            <div class="game-card" data-category="casual" data-name="geometry dash">
+                <div class="game-thumbnail">
+                    <div class="game-emoji">🔺</div>
+                </div>
+                <div class="game-info">
+                    <h3 class="game-title">Geometry Dash</h3>
+                    <p class="game-description">Jump and fly through danger! Rhythm-based action platformer.</p>
+                    <div class="game-meta">
+                        <span class="game-category">Casual</span>
+                        <span class="game-source">Crazygames</span>
+                    </div>
+                    <a href="https://www.crazygames.com/embed/geometry-dash" class="play-button" target="_blank">
+                        <span>🎮 Play Now</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Drift Boss -->
+            <div class="game-card" data-category="casual" data-name="drift boss">
+                <div class="game-thumbnail">
+                    <div class="game-emoji">🏎️</div>
+                </div>
+                <div class="game-info">
+                    <h3 class="game-title">Drift Boss</h3>
+                    <p class="game-description">Master the art of drifting! Keep your car on the winding track.</p>
+                    <div class="game-meta">
+                        <span class="game-category">Casual</span>
+                        <span class="game-source">Crazygames</span>
+                    </div>
+                    <a href="https://www.crazygames.com/embed/drift-boss" class="play-button" target="_blank">
+                        <span>🎮 Play Now</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Bubble Shooter -->
+            <div class="game-card" data-category="casual" data-name="bubble shooter">
+                <div class="game-thumbnail">
+                    <div class="game-emoji">🫧</div>
+                </div>
+                <div class="game-info">
+                    <h3 class="game-title">Bubble Shooter</h3>
+                    <p class="game-description">Pop bubbles by matching colors! Classic arcade puzzle game.</p>
+                    <div class="game-meta">
+                        <span class="game-category">Casual</span>
+                        <span class="game-source">Crazygames</span>
+                    </div>
+                    <a href="https://www.crazygames.com/embed/bubble-shooter" class="play-button" target="_blank">
+                        <span>🎮 Play Now</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Minecraft Classic -->
+            <div class="game-card" data-category="casual" data-name="minecraft classic">
+                <div class="game-thumbnail">
+                    <div class="game-emoji">🧱</div>
+                </div>
+                <div class="game-info">
+                    <h3 class="game-title">Minecraft Classic</h3>
+                    <p class="game-description">Build and explore in the classic version! Creative sandbox game.</p>
+                    <div class="game-meta">
+                        <span class="game-category">Casual</span>
+                        <span class="game-source">Minecraft</span>
+                    </div>
+                    <a href="https://classic.minecraft.net/" class="play-button" target="_blank">
+                        <span>🎮 Play Now</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Happy Wheels -->
+            <div class="game-card" data-category="casual" data-name="happy wheels">
+                <div class="game-thumbnail">
+                    <div class="game-emoji">🦽</div>
+                </div>
+                <div class="game-info">
+                    <h3 class="game-title">Happy Wheels</h3>
+                    <p class="game-description">Ragdoll physics racing! Navigate dangerous obstacle courses.</p>
+                    <div class="game-meta">
+                        <span class="game-category">Casual</span>
+                        <span class="game-source">Crazygames</span>
+                    </div>
+                    <a href="https://www.crazygames.com/embed/happy-wheels" class="play-button" target="_blank">
+                        <span>🎮 Play Now</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Cut the Rope -->
+            <div class="game-card" data-category="casual" data-name="cut the rope">
+                <div class="game-thumbnail">
+                    <div class="game-emoji">🍬</div>
+                </div>
+                <div class="game-info">
+                    <h3 class="game-title">Cut the Rope</h3>
+                    <p class="game-description">Feed candy to Om Nom! Cut ropes and solve physics puzzles.</p>
+                    <div class="game-meta">
+                        <span class="game-category">Casual</span>
+                        <span class="game-source">Crazygames</span>
+                    </div>
+                    <a href="https://www.crazygames.com/embed/cut-the-rope" class="play-button" target="_blank">
                         <span>🎮 Play Now</span>
                     </a>
                 </div>
